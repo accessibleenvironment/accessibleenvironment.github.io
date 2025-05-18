@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- importing Fontic UI css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fountic-ui/dist/fountic-ui.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/fountic-ui/dist/fountic-ui.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+  <meta name="description" content="Best Destination For Freshers To Start Career in Web Development.">
+  <meta name="author" content="Ronald Jason Escrader">
+  <title>
+ContactUs
+</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a href="#heading-1">Skip to content</a>
+
+<header role="banner"><i><u>
+<img id="banner-image" src="Accessible Environment logo.jpg" alt="Accessible Environment Logo" width="200" height="200">
+</header>
+    <u><i>
+      Welcome To Accessible Environment!
+    </i></u>
+<nav title="List of links ">
+<ul type="none">
+<li>
+<a accesskey="h"href="index.html">Home</a>
+</li><br>
+<li>
+<a accesskey="o"href="About our well structurized program.html" >About Our Well Structurized Program </a>
+</li><br>
+<li>
+<a accesskey="u"href="courses.html" > Courses </a>
+</li><br>
+<li>
+<a accesskey="i"href="career oriented courses.html"> Career Oriented Courses </a>
+</li>      <br>
+<li>
+<a accesskey="y"href="A11Y Web Services.html"> A11Y Web Designing Services </a>
+</li><br>
+<li>
+<a accesskey="c"href="Contact Us.html">Contact Us </a>
+</li> 
+</ul>
+</nav>
+<main>
+<div border="1">
+<h1 id="heading-1"> Contact us via e-mail:-
+</h1>
+<address>
+<cite>
+ Contact Person:- <b><i><u> Mr Ronald Jason Escrader.</u></i></b>
+</cite>
+<p> 
+<i>
+Email address: 
+<a href="mailto:ronald@accessibleenvironment.in"> ronald@accessibleenvironment.in</a>
+</i>
+</p>
+</address>
+</div>
+<hr>
+<div border="1">
+
+<h2>
+ Contact us via phone call:-
+</h2>
+<P> 
+<i>
+If you have any further questions, feel free to get in touch with 
+<Cite> 
+Contact Person:- <b><i><u> Mr. Ronald Jason Escrader.</u></i></b>
+</cite>
+on below contact number  between 10 am to 7pm from "Mon- Sat".
+</i>
+</p>
+<address aria-label="Contact Information">
+    <span class="phone-number">(8510869576)</span></p>
+</address>
+</div>
+</main>
+<footer>
+<ul>
+<li>
+<a accesskey="a"href="About us.html"  >About us </a>
+</li><br>
+<li>
+<a accesskey="s"href="Accessibility Statement.html" target"_blank"> Accessibility Statement- (This page will open in a new tab). </a>
+</li>
+</ul>
+    <h3>Follow us on our social media platforms:-</h3>
+
+    <p>
+      <h4>Connect with us on Facebook:</h4>
+      <a href="https://www.facebook.com/accessibleenvironment.in" target="_blank">Visit our Facebook page! (This page will open in a new tab)<img src="Facebook icon.png" alt="Facebook icon" style="width:42px;height:42px;"></a>
+    </p>
+
+    <p>
+      <h4>Connect with us on LinkedIn:</h4>
+      <a href="https://www.linkedin.com/in/accessible-environment-299ba2309"target="_blank">Visit Accessible Environment LinkedIn Page! (This page will open in a new tab)<img src="LinkedIn icon.png" alt="LinkedIn icon" style="width:42px;height:42px;"></a>
+    </p>
+
+    <p>&copy; Copyright Accessible Environment 2024 all rights are reserved.</p>
+    <p>Website "Tested & developed" by <q><cite>Mr Ronald Jason Escrader.</cite></q></p>
+    <p><i><q><cite>Accessible Environment: Version (5.0).</cite></q></i></p>
+  </footer>
+
+  <!-- "Go to Top" link -->
+  <a href="#" id="goToTop" aria-label="Go to Top">Top</a>
+
+  <!-- Your existing scripts go here -->
+  <script>
+    window.onscroll = function() {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      var goToTopButton = document.getElementById("goToTop");
+
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        goToTopButton.style.display = "block";
+      } else {
+        goToTopButton.style.display = "none";
+      }
+    }
+
+    document.getElementById("goToTop").addEventListener("click", function(event) {
+      event.preventDefault();
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+      // Announce the change using aria-live
+      var liveRegion = document.createElement("div");
+      liveRegion.setAttribute("aria-live", "polite");
+      liveRegion.setAttribute("style", "position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden;");
+
+      // Add the live region to the body and then remove it after a short delay
+      document.body.appendChild(liveRegion);
+      liveRegion.innerText = "Focus moved to the top of the page.";
+
+      setTimeout(function() {
+        document.body.removeChild(liveRegion);
+      }, 1000);
+
+    });
+  </script>
+</body>
+</html>
